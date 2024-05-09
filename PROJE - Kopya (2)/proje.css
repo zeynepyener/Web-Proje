@@ -1,0 +1,41 @@
+.custom-container {
+    padding: 20px;
+}
+#girisCubugu{
+    background-color: rgb(73, 164, 234);
+}
+.nav-link{
+    color: black;
+}
+#hakkinda{
+    color: black;
+}
+#ozGecmis{
+    color: black;
+}
+#ara{
+    color: black;
+}
+#saüResim{
+    width: 90%;
+    height: 15%;
+}
+#kahvekitapResim{
+    width: 90%;
+    height: 15%;
+}
+h1{
+    color: rgb(73, 164, 234);
+}
+#spor1{
+    width: 45%;
+    height: 15%;
+}
+#spor2{
+    width: 45%;
+    height: 15%;
+}
+#bulmaca{
+    width: 90%;
+    height: 15%;
+}
