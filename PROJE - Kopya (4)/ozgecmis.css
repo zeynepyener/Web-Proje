@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 20px; /*Kenarla arasında 20 piksellik boşluk bırakır. */
+}
+header{
+    text-align: center;
+    padding: 10px 0; /*üst alt dolgu 10 piksel üst alt 0 piksel */
+} 
+main{
+    margin-top: 20px; /* üst kenarda 20pxlik boşluk*/
+}
+section{
+    margin-bottom: 20px /*alt kenardan 20 pxlik boşluk */
+}
+h2{
+    text-align: center;
+    color: rgb(73, 164, 234);
+}
+#sütun1{
+    background-color:rgb(58, 59, 79);
+}
+#kadinKullanici{
+    width: 300px;
+    height: 300px;
+}
+#meslekYazisi{
+    background-color: rgb(58, 59, 79);
+}
