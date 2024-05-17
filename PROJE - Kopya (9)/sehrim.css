@@ -1,0 +1,35 @@
+.d-block {
+    width: 700px;
+    height: 306px;
+}
+
+.carousel-inner {
+    max-width: 60%;
+    /* Veya istediğiniz genişlik değerini ayarlayabilirsiniz */
+    margin: 0 auto;
+    /* İçeriği yatayda ortalamak için */
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: rgb(73, 164, 234);
+}
+
+h4 {
+    text-align: center;
+}
+
+.kenarliklar {
+    width: 150px;
+    height: 1300px;
+}
+
+.col {
+    background-color: rgb(46, 45, 45);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgb(46, 45, 45);
+}
