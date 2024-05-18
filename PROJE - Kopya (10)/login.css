@@ -1,0 +1,17 @@
+body{
+    background-image: url("Resimler/tema.png");
+    background-size:1600px 800px;
+}
+.form-label{
+color: hsl(35, 35%, 33%);
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn{
+    width: 150px;
+    height: 48px;
+    background-color: hsl(35, 35%, 33%);
+    margin: auto;
+}
+.form-control{
+    background-color:  hsl(35, 35%, 33%);
+}

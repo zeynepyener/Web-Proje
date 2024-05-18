@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr" data-bs-theme="dark">
+
+<head>
+    <title>İletişim</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="İletişim sayfası">
+    <meta name="author" content="Zeynep Yener">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="iletisim.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="girisCubugu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="proje.php" title="Hakkında sayfasına gider" id="hakkinda">
+                <img src="Resimler/backicon.png">
+                Geri
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="container ">
+        <div class="row align-items-start">
+            <div class="col kenarlik">
+                <img src="Resimler/kenarlik.jpg" class="kenarliklar" alt="Kenarlık">
+            </div>
+            <div class="col kenarlik">
+                <br>
+                <h1>İLETİŞİM FORMU</h1> <br>
+                <h6>Sayfamıza göz attıysanız ufak bir anket sizi beklemekte...</h6>
+                <br> <br>
+                <form>
+                    <label for="adi">
+                        <h5>Kullanıcı Adınız: </h5>
+                    </label>
+                    <input type="text" class="formelemani" name="kullaniciAdi" placeholder="Kullanıcı adınızı giriniz:">
+                    <br> <br>
+                    <label for="sifre">
+                        <h5>Şifreniz: </h5>
+                    </label>
+                    <input type="password" class="formelemani" name="sifre" placeholder="Şifrenizi giriniz:"> <br> <br>
+                    <label for="cinsiyeti">
+                        <h5>Cinsiyetiniz: </h5>
+                    </label> <br>
+                    <input type="radio" name="cinsiyet" value="kadin" checked>
+                    <label for="kadin">
+                        Kadın
+                    </label> <br>
+                    <input type="radio" name="cinsiyet" value="erkek">
+                    <label for="erkek">
+                        Erkek
+                    </label> <br>
+                    <label for="dogumTarihi">
+                        <h5>Doğum Tarihiniz: </h5>
+                    </label>
+                    <input type="date" name="dogumTarihi" class="formelemani">
+                    <br> <br>
+                    <label for="üniversite">
+                        <h5>Üniversiteniz:</h5>
+                    </label>
+                    <select name="üniversiteler" class="formelemani">
+                        <option value="saü" selected>Sakarya Üniversitesi</option>
+                        <option value="koü">Kocaeli Üniversitesi</option>
+                        <option value="itü">İstanbul Teknik Üniversitesi</option>
+                        <option value="odtü">Orta Doğu Teknik Üniversitesi</option>
+                    </select>
+                    </datalist> <br> <br>
+                    <label for="bölüm">
+                        <h5>Bölümünüz: </h5>
+                    </label>
+                    <select name="bölümler" class="formelemani">
+                        <option value="ceng" selected>Bilgisayar Mühendisliği</option>
+                        <option value="makine">Makine Mühendisliği</option>
+                        <option value="ziraat">Ziraat Mühendisliği</option>
+                        <option value="mekatronik">Mekatronik Mühendisliği</option>
+                    </select>
+                    </datalist> <br> <br>
+                    <label for="hobiler">
+                        <h5>Hobilerinizi işaretleyiniz:</h5>
+                    </label> <br>
+                    <input type="checkbox" name="hobi1" value="enstrüman">Enstrüman Çalmak<br>
+                    <input type="checkbox" name="hobi2" value="orgu">Örgü Örmek <br>
+                    <input type="checkbox" name="hobi3" value="spor">Spor Yapmak <br>
+                    <input type="checkbox" name="hobi4" value="bulmaca">Bulmaca Çözmek <br>
+                    <input type="checkbox" name="hobi5" value="müzik">Müzik Dinlemek <br>
+                    <input type="checkbox" name="hobi6" value="film">Film İzlemek <br>
+                    <input type="checkbox" name="hobi2" value="kitap">Kitap Okumak<br>
+                    <br> <br>
+                    <label for="filmafisi">
+                        <h5>En sevdiğiniz filmin afişini içeren bir dosya yükleyiniz:</h5>
+                    </label>
+                    <input type="file" class="formelemani" name="dosya">
+                    <br> <br>
+                    <label for="iletme">
+                        <h5>Bize iletin:</h5>
+                    </label>
+                    <textarea class="formelemani" name="mesaj" rows="9" cols="50" placeholder="Buraya yazınız...">
+                    </textarea> <br>
+                    <input type="reset" class="formelemani" @click="checkEmptyFields" value="TEMİZLE">
+                    <input type="submit" class="formelemani" @click="checkEmailFormat" value="GÖNDER">
+
+                </form>
+            </div>
+            <div class="col kenarlik">
+                <img src="Resimler/kenarlik.jpg" class="kenarliklar" alt="Kenarlık">
+            </div>
+        </div>
+</body>
+
+</html>
